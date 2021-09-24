@@ -1,0 +1,29 @@
+{
+  "name": "npozdeev.com",
+  "version": "0.0.1",
+  "description": "My personal website",
+  "author": {
+    "name": "Nikita Pozdeev",
+    "email": "npozdeev1992@gmail.com",
+    "url": "https://npozdeev.com"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/crabn3bula/npozdeev.com/issues"
+  },
+  "homepage": "https://github.com/crabn3bula/npozdeev.com#readme",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crabn3bula/npozdeev.com.git"
+  },
+  "dependencies": {
+    "next": "^11.1.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
