@@ -1,0 +1,59 @@
+:root {
+  /* colors */
+  --background-main: black;
+  --color-main: white;
+
+  /* typography */
+  --font-size: 15px;
+  --font-family: 'Helvetica', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  background: var(--background-main);
+  color: var(--color-main);
+}
+
+a {
+  text-decoration: none;
+}
+
+a, a:visited, a:active {
+  color: var(--color-main);
+}
+
+ul, ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  height: 100vh;
+}
+
+.container__main {
+  flex-grow: 1;
+  padding: 5rem 0;
+}
+
+.navbar__links {
+  display: flex;
+}
+
+.navbar__link {
+  margin-right: 1rem;
+}

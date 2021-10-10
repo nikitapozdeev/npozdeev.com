@@ -1,11 +1,13 @@
 import Contacts from "./Contacts";
-import Navbar from "./Navbar";
+import Navbar from "./Header";
 
 const Container = ({ children }) => {
   return (
-    <div>
+    <div className="container">
       <Navbar />
-      {children}
+      <main className="container__main">
+        {children}
+      </main>
       <Contacts />
     </div>
   )

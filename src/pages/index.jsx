@@ -1,9 +1,8 @@
 const Home = () => {
   return (
-    <div>
-      
-      Test next!
-    </div>
+    <article className="container__page">
+      Test next!sdsd
+    </article>
   )
 }
 
