@@ -1,31 +1,28 @@
-import Link from 'next/link';
+import ContactLink from './ContactLink';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-const links = [
-  {
-    path: 'https://github.com/crabn3bula',
-    text: 'GitHub'
-  },
-  {
-    path: 'https://www.linkedin.com/in/nikita-pozdeev-85b18620a/',
-    text: 'LinkedIn'
-  },
-  {
-    path: 'mailto:npozdeev1992@gmail.com',
-    text: 'Email'
-  }
-]
+const LINKS = {
+  GITHUB: 'https://github.com/nikitapozdeev',
+  LINKEDIN: 'https://www.linkedin.com/in/nikita-pozdeev-85b18620a/',
+  EMAIL: 'mailto:npozdeev1992@gmail.com',
+}
+
 const Contacts = () => {
   return (
     <footer className="container__footer">
-      <ul className="navbar__links">
-        {links.map(({ path, text }) => (
-          <li className="navbar__link">
-            <Link href={path}>
-              <a>{text}</a>
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <nav className="navbar__links">
+        <ContactLink path={LINKS.GITHUB}>
+          <FontAwesomeIcon icon={faGithub} size='2x'/>
+        </ContactLink>
+        <ContactLink path={LINKS.LINKEDIN}>
+          <FontAwesomeIcon icon={faLinkedin} size='2x'/>
+        </ContactLink>
+        <ContactLink path={LINKS.EMAIL}>
+          <FontAwesomeIcon icon={faEnvelope} size='2x'/>
+        </ContactLink>
+      </nav>
     </footer>
   )
 };

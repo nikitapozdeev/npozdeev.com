@@ -1,19 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 :root {
-  /* colors */
-  --background-main: black;
-  --color-main: white;
+  --background-main: #1f1e1e;
+  --color-main: #78a5a3;
+  --color-bright: #e7a71b;
 
-  /* typography */
-  --font-size: 15px;
-  --font-family: 'Helvetica', sans-serif;
+  --font-size: 20px;
+  --font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
-* {
+*, *::after, *::before {
   box-sizing: border-box;
-}
-
-html, body {
-  height: 100%;
 }
 
 body {
@@ -22,38 +19,39 @@ body {
   font-size: var(--font-size);
   background: var(--background-main);
   color: var(--color-main);
-}
-
-a {
-  text-decoration: none;
-}
-
-a, a:visited, a:active {
-  color: var(--color-main);
-}
-
-ul, ol {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  min-height: 100vh;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
 }
 
 .container__main {
-  flex-grow: 1;
-  padding: 5rem 0;
+  padding: 5em 2em;
+  max-width: 767px;
 }
 
 .navbar__links {
   display: flex;
+  gap: 2em;
 }
 
-.navbar__link {
-  margin-right: 1rem;
+.contact-link {
+  color: hsl(
+    var(--hue, 200),
+    var(--saturation, 1%),
+    calc(var(--lightness-offset, 0%) + var(--lightness, 51%))
+  );
+}
+
+.contact-link:hover {
+  --lightness-offset: 40%;
+}
+
+.greetings {
+  color: var(--color-bright);
 }
