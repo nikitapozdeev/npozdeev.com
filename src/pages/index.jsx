@@ -15,10 +15,11 @@ const Home = () => {
         <title>Nikita Pozdeev</title>
         <meta name="description" content={meta.description}/>
         <meta name="image" content={meta.image}/>
-        <meta name="og:url" content={meta.url} />
-        <meta name="og:title" content={meta.title} />
-        <meta name="og:description" content={meta.description} />
-        <meta name="og:image" content={meta.image} />
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content={meta.url}/>
+        <meta property="og:title" content={meta.title}/>
+        <meta property="og:description" content={meta.description}/>
+        <meta property="og:image" content={meta.image}/>
         <meta name="twitter:card" content="summary"/>
         <meta name="twitter:title" content={meta.title}/>
         <meta name="twitter:description" content={meta.description}/>
