@@ -6,7 +6,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 const LINKS = {
   GITHUB: 'https://github.com/nikitapozdeev',
   LINKEDIN: 'https://www.linkedin.com/in/nikita-pozdeev-85b18620a/',
-  EMAIL: 'mailto:npozdeev1992@gmail.com',
+  EMAIL: 'mailto:nikita.pozdeev.dev@gmail.com',
 }
 
 const Contacts = () => {
